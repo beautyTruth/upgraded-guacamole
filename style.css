@@ -25,6 +25,11 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
+  transition: right 0.5s;
+}
+
+.change .hamburger-menu {
+  right: 33rem;
 }
 
 .line {
@@ -32,6 +37,23 @@ html {
   height: 0.2rem;
   background-color: aliceblue;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.line {
+  background-color: rgba(0, 0, 139, 0.801);
+}
+
+.change .line-1 {
+  transform: rotate(45deg) translate(0.3rem, 0.8rem);
+}
+
+.change .line-2 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change .line-3 {
+  transform: rotate(-45deg) translate(0.3rem, -0.8rem);
 }
 
 .header {
@@ -121,4 +143,78 @@ html {
     transform: translateY(0) rotateY(0);
     opacity: 1;
   }
+}
+
+.sidebar {
+  width: 40rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -40rem;
+  background-color: rgb(165, 247, 206);
+  transition: right 0.3s;
+}
+
+.change .sidebar {
+  right: 0;
+}
+
+.menu {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-link {
+  font-family: "baloo da 2", sans-serif;
+  font-size: 4rem;
+  color: steelblue;
+  position: relative;
+}
+
+.menu-link::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(187, 148, 224);
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.3s;
+}
+
+.menu-link:hover::before {
+  width: 100%;
+}
+
+.social-media {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media i {
+  font-size: 2.2rem;
+  margin: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: steelblue;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-media i:hover {
+  background-color: rgb(187, 148, 224);
 }
