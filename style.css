@@ -580,3 +580,51 @@ html {
   text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 }
+
+.footer {
+  width: 100%;
+  height: 15rem;
+  background-color: rgb(148, 248, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-family: "baloo da 2", sans-serif;
+  font-size: 1.6rem;
+  color: rgb(32, 0, 48);
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.social-list a {
+  margin: 0 2rem;
+}
+
+.social-list i {
+  font-size: 2rem;
+  color: rgb(32, 0, 48);
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.scroll-btn {
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: aliceblue;
+  box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
