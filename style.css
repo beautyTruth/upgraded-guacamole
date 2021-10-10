@@ -189,6 +189,7 @@ html {
   right: -40rem;
   background-color: rgb(165, 247, 206);
   transition: right 0.3s;
+  z-index: 100;
 }
 
 .change .sidebar {
